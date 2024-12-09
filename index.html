@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>EcoFlow</title>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo-container">
+                <div id="logo">EcoFlow</div>
+                <i id="logo-icon" class="fa-solid fa-water"></i>
+            </div>
+
+            <div class="link-container">
+                <a href="https://www.linkedin.com/in/lgpassarini/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/lgpassarini" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="pass-section">
+
+        <video id="pass-video" autoplay muted loop>
+            <source src="./img/home-video.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos HTML5.
+        </video>
+
+        <div id="pass-container">
+
+            <div class="input-section">
+                <div>
+                    <label for="tempo-banho">Tempo No Banho (Minutos)</label>
+                    <div class="input-eye">
+                        <input name="tempo-banho" type="text" id="tempo-banho" maxlength="25" placeholder="0">
+                    </div>
+                </div>
+                <div>
+                    <label for="escovacao">Escovação de dentes (Quantidade diária de vezes) </label>
+                    <div class="input-eye">
+                        <input name="escovacao" type="text" id="escovacao" maxlength="25" placeholder="0">
+                    </div>
+                </div>
+            </div>
+    
+            <input id="calc-button" type="submit" value="Calcular Consumo Diário">
+
+            <div id="result"></div>
+
+        </div>
+    </section>
+
+    
+    <section id="warning-section">
+        <div class="warning-container">
+            <h1>"Economizar água é essencial para preservar um recurso vital e garantir um futuro sustentável!"</h1>
+            <span>Pequenas atitudes do dia a dia podem fazer uma grande <strong>diferença.</strong></span> <br> <br>
+            <span>Para isso, adote hábitos simples como fechar a torneira enquanto escova os dentes ou lava as mãos, tomar banhos mais curtos e evitar deixá-la aberta ao lavar a louça. Use a máquina de lavar roupas e louças somente quando estiver cheia e considere a coleta de água da chuva para regar plantas. Essas pequenas atitudes fazem uma grande diferença no consumo e ajudam a promover um mundo mais equilibrado e consciente.</span>
+        </div>
+    </section>
+
+    <section id="grid-section">
+        <div class="grid-container">
+            <ul id="quantity-list">
+                <li><span>1 Litro</span><span>A quantidade de água necessária para cozinhar uma pequena quantidade de macarrão.</span></li>
+                <li><span>10 Litros</span><span>A quantidade de um galão médio de água.</span></li>
+                <li><span>50 Litros</span><span>O volume de água que uma máquina de lavar roupa usa em um ciclo de lavagem.</span></li>
+                <li><span>200 Litros</span><span>A quantidade necessária para encher uma banheira.</span></li>
+                <li><span>500 Litros</span><span>A quantidade equivalente a 10 banhos.</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="perfil-section">
+        <div class="perfil-container">
+
+            <div class="perfil-content">
+                <div class="perfil-presentation">
+                    <h3 id="perfil-title">Quem sou eu</h3>
+                    <img id="perfil-img" src="./img/leo.jpg" alt="">
+                    <span>Leonardo Passarini</span>
+                </div>
+
+                <div class="perfil-text">
+                    <div class="perfil-item">Sou Leonardo Passarini, um jovem de 23 anos apaixonado por tecnologia e estudante de Análise e Desenvolvimento de Sistemas na Instituição Cruzeiro do Sul.</div>
+                    <div class="perfil-item">O objetivo deste projeto é fornecer às pessoas uma ferramenta prática para calcular e monitorar o consumo diário de água, aplicando as habilidades e técnicas adquiridas no ambiente acadêmico.</div>
+                    <div class="perfil-item">Este trabalho é uma oportunidade de promover uma maior conscientização sobre a importância da economia de água e o uso responsável desse recurso essencial. Com isso, buscamos contribuir para um mundo mais sustentável e garantir um futuro com acesso a água de qualidade para todos.</div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

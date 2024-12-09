@@ -1,0 +1,125 @@
+#pass-container{
+    padding: 20px 40px;
+    background-color: #f7f9fc;
+    display: grid;
+    align-content: center;
+    gap: 24px;
+    border-radius: 6px;
+    max-width: 800px;
+    margin: 120px auto;
+}
+
+#pass-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+    filter: blur(8px);
+    -webkit-filter: blur(8px); 
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#calc-button {
+    padding: 12px 20px;
+    outline: none;
+    background-color: #1F509A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+#calc-button:hover{
+    background-color: #0A3981;
+}
+
+
+.input-section{
+    display: grid;
+    gap: 6px;
+}
+
+#tempo-banho,
+#escovacao{
+    outline: 0;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: solid 2px #9694FF;
+    font-size: 1.275rem;
+}
+
+.input-eye{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-content: center;
+}
+
+#result{
+    width: 100%;
+    padding: 10px 15px;
+    background-color: #00005c;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    display: none;
+}
+
+
+#grid-section {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    background-color: #CBDCEB;
+}
+
+.grid-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 40px;
+    border-radius: 6px;
+}
+
+#quantity-list { 
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#quantity-list li{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 6px 0 0 6px;
+}
+
+#quantity-list li:nth-child(5) {
+    background: rgb(0,0,92);
+    background: linear-gradient(90deg, rgba(0,0,92,1) 85%, rgba(4,100,182,1) 99%);
+}
+#quantity-list li:nth-child(4) {
+    background: rgb(0,0,92);
+    background: linear-gradient(90deg, rgba(0,0,92,1) 61%, rgba(4,100,182,1) 79%);
+}
+#quantity-list li:nth-child(3) {
+    background: rgb(0,0,92);
+    background: linear-gradient(90deg, rgba(0,0,92,1) 37%, rgba(4,100,182,1) 61%);
+}
+#quantity-list li:nth-child(2) {
+    background: rgb(0,0,92);
+    background: linear-gradient(90deg, rgba(0,0,92,1) 20%, rgba(4,100,182,1) 35%);
+}
+#quantity-list li:nth-child(1) {
+    background: rgb(0,0,92);
+    background: linear-gradient(90deg, rgba(0,0,92,1) 10%, rgba(4,100,182,1) 18%);
+}
+
